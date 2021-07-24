@@ -1,0 +1,22 @@
+{% extends "public/templates/public_template.html" %}{% block title %}PREDICT SPAM{% endblock %}{% block main %}
+<style>
+    h4 {
+        margin-top: 100px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4>Enter your message: </h4>
+            <hr>
+            <form action="{{ url_for('predict')}}" method="POST">
+                <textarea class="from-control" type="text" name="message" required placeholder="Enter the message here..."></textarea>
+                <br>
+                <br>
+                <hr>
+                <input type="submit" value="Check">
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}>

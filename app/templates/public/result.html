@@ -1,0 +1,22 @@
+{% extends "public/templates/public_template.html" %}{% block title %}PREDICT SPAM{% endblock %}{% block main %}
+<style>
+    h1 {
+        text-align: center;
+        margin-top: 250px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <div>
+                {% if prediction ==1%}
+                <h1>Spam</h1>
+                {%else%}
+                <h1>Ham</h1>
+                {%endif%}
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
