@@ -11,9 +11,14 @@
         <div class="column">
             <div>
                 {% if prediction ==1%}
-                <h1>Spam</h1>
+                <h1>
+                    <p>🤔</p>Beware! The message is a spam
+
+                </h1>
                 {%else%}
-                <h1>Ham</h1>
+                <h1>This message is not a spam! You are safe!
+                    <p>&#128516</p>
+                </h1>
                 {%endif%}
             </div>
         </div>
